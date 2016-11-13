@@ -1,0 +1,41 @@
+# hide project files -- source only
+*.cbp
+*.sln
+*.vcx*
+*.workspace*
+config.make
+Makefile
+*.xcodeproj
+*.plist
+*.xcconfig
+*.suo
+*.depend
+*.layout
+*.mode*v3
+*.pbxuser
+*.app*
+*.DS_*
+*.xcworkspacedata
+xcuserdata/
+project.xcworkspace
+*.opensdf
+*.sdf
+*.suo
+*.ipch
+
+.svn/
+obj/
+bin/
+build/
+!data/
+
+# data
+ConvnetOSC/bin/data/image-net-2012.words
+ConvnetOSC/bin/data/image-net-2012.sqlite3
+FaceTracker2OSC/bin/data/shape_predictor_68_face_landmarks.dat
+KinectOSC/bin/data/openni
+KinectOSC/bin/data/openni/*
+
+# not ready
+_AudioAnalyzer
+_VideoAnalyzerOsc
