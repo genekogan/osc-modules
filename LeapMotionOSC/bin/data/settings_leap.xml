@@ -1,0 +1,5 @@
+<LeapOSC>
+	<destination>127.0.0.1</destination>
+	<port>6448</port>
+	<address>/wek/inputs</address>
+</LeapOSC>
