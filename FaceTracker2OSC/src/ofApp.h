@@ -6,7 +6,7 @@
 #include "ofxControl.h"
 
 #define OSC_DESTINATION_DEFAULT "localhost"
-#define OSC_ADDRESS_ROOT_DEFAULT "/kinect"
+#define OSC_ADDRESS_ROOT_DEFAULT "/wek/inputs"
 #define OSC_PORT_DEFAULT 6448
 
 class ofApp : public ofBaseApp{
