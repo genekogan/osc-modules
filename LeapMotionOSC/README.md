@@ -6,7 +6,7 @@ This application streams raw data and optionally derived statistics from a [Leap
 
 To change the configuration (OSC info), edit the file `settings_leap.xml`, and change accordingly.
 
-The default configuration is made to plug straight into [Wekinator](wekinator.org).
+The default configuration is made to plug straight into [Wekinator](http://www.wekinator.org).
 
 Default osc destination: localhost
 Default osc port: 6448
