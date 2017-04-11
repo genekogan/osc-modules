@@ -141,7 +141,16 @@ void ofApp::setup(){
     gui.setWidth(400);
     midiGui = gui.addMenu("Select MIDI Device", this, &ofApp::selectMidiDevice, false, false);
 
-    osc.setup(12000);
+    addressRoot = DEFAULT_INPUT_ADDRESS;
+    portIn = DEFAULT_PORT_IN;
+    
+    ofXml xml;
+    xml.load("settings_audiounit.xml");
+    xml.setTo("AudioUnitOSC");
+    portIn = ofToInt(xml.getValue("port"));
+    addressRoot = xml.getValue("address");
+    
+    osc.setup(portIn);
 }
 
 //--------------------------------------------------------------
@@ -195,7 +204,7 @@ void ofApp::update(){
     while (osc.hasWaitingMessages()) {
         ofxOscMessage msg;
         osc.getNextMessage(msg);
-        if (msg.getAddress() == "/wek/outputs") {
+        if (msg.getAddress() == addressRoot) {
             for (int i=0; i<msg.getNumArgs(); i++) {
                 selection.setValue(i, msg.getArgAsFloat(i));
             }

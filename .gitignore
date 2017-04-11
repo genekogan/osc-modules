@@ -39,3 +39,7 @@ KinectOSC/bin/data/openni/*
 # not ready
 _AudioAnalyzer
 _VideoAnalyzerOsc
+
+# release
+release
+release/*

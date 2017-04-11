@@ -14,6 +14,13 @@ void ofApp::update(){
 void ofApp::setupGui() {
     addressRoot = DEFAULT_INPUT_ADDRESS;
     portIn = DEFAULT_PORT_IN;
+    
+    ofXml xml;
+    xml.load("settings_ableton.xml");
+    xml.setTo("AbletonOSC");
+    portIn = ofToInt(xml.getValue("port"));
+    addressRoot = xml.getValue("address");
+    
     gui.setup(&live, addressRoot, portIn);
 }
 

@@ -78,5 +78,5 @@ void ofApp::draw(){
     ofDrawBitmapStringHighlight("Tracker thread framerate : "+ofToString(tracker.getThreadFps()), 10, 40);
     
     ofSetColor(255);
-    ofDrawBitmapString(oscMessageString, 15, ofGetHeight() - 4);
+    ofDrawBitmapStringHighlight(oscMessageString, 15, ofGetHeight() - 4);
 }

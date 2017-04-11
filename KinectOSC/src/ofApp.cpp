@@ -109,7 +109,7 @@ void ofApp::draw(){
     if (kinect.getNumTrackedUsers() > 0) {
         kinect.drawSkeleton(0);
     }
-    ofDrawBitmapString(oscMessageString, 15, ofGetHeight() - 4);
+    ofDrawBitmapStringHighlight(oscMessageString, 15, ofGetHeight() - 4);
 }
 
 //--------------------------------------------------------------

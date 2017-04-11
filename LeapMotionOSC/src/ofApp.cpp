@@ -127,7 +127,7 @@ void ofApp::draw(){
     
     ofPushStyle();
     ofSetColor(255);
-    ofDrawBitmapString("streaming "+ofToString(numArgs)+" values (address = \""+oscAddress+"\") to "+oscOut+":"+ofToString(portOut), 20, ofGetHeight()-4);
+    ofDrawBitmapStringHighlight("streaming "+ofToString(numArgs)+" values (address = \""+oscAddress+"\") to "+oscOut+", port "+ofToString(portOut), 20, ofGetHeight()-4);
     ofPopStyle();
 }
 

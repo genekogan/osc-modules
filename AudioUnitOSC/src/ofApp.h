@@ -6,6 +6,9 @@
 #include "AudioUnitController.h"
 
 
+#define DEFAULT_INPUT_ADDRESS "/wek/outputs"
+#define DEFAULT_PORT_IN 12000
+
 struct ParamterAudioUnitPair {
     ParamterAudioUnitPair(AudioUnitController *au, string name);
     void setValue(float value);
@@ -86,4 +89,6 @@ public:
     Selection selection;
     
     ofxOscReceiver osc;
+    string addressRoot;
+    int portIn;
 };

@@ -1,0 +1,4 @@
+<AbletonOSC>
+	<port>12000</port>
+	<address>/wek/outputs</address>
+</AbletonOSC>
